@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script>
+
+    function getSum(arr) {
+	    var sum = 0;
+         for (var x=0; x<arr.length; x++) {
+		    var i = arr[x];
+		    if ((arr[x] == "J") || (arr[x] == "Q") || (arr[x] == "K")) {
+			   	sum = sum + 10;
+			} else if (arr[x] != "A") {
+			    sum = sum + parseInt(i);
+			} else if (sum  > 10) {
+			    sum = sum + 1;
+			} else {
+			    sum = sum + 11;
+			}
+			}
+			return sum;
+	}
+		
+		alert("Сумма карт у игрока: " + getSum(["Q","7","A"]));
+		
+</script>
