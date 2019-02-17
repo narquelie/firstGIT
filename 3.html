@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script>
+
+    var a = 15;
+	var b = 30;
+	var c = 70;
+	var d = 82;
+    var x = parseInt(prompt("Введите угол обстрела от 0 до 90 градусов:"));
+	
+	if (isNaN(x)) {
+	    alert("Вводить следует только числа!");
+    } else if (x < 0)  {
+	    alert("Введен неверный угол обстрела!");
+	} else  if (x> 90) {
+	    alert("Введен неверный угол обстрела!");
+	} else  if (((x > a) && (x < b)) || ((x > b) && (x < a))) {
+        alert("В яблочко!");
+    } else if (((x > c) && (x < d)) || ((x > d) && (x < c))) {
+        alert("В яблочко!");
+    } else {
+        alert("Промах!Попробуйте заново!");
+    }		
+	
+</script>

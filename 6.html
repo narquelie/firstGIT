@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<script>
+
+   	var red = 1;
+	var rounds = 1000000;
+	var x = 0;
+	var roulette = [];
+	var z = 0;
+	var y = 0;
+	var count = [];
+	
+	for(x=0; x<=rounds; x++) {
+	    roulette.push(Math.round(Math.random()*2-1));
+	}
+	
+	alert(roulette);
+	
+	for (x=0 ; x<roulette.length; x++) {
+	     if (roulette[x] == 1) {
+		     z++;
+		    count.push(z);
+		} else {
+			     count.push(0);
+				 z = 0;
+	    }
+	}
+	
+	alert(count);
+	
+	for (x=0; x<count.length; x++) {
+	     if (count[x] > y) {
+		     y = count[x];
+		} 
+	}    
+	
+	alert("Наибольшая последовательность выпадения красного: " + y);
+	
+</script>

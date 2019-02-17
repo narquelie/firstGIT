@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+
+    var time = parseInt(prompt("Введите срок вклада:"));
+	var sum = parseInt(prompt("Введите сумму вклада:"));
+	var procents = parseInt(prompt("Введите процентную ставку"));
+	
+	for (var n=1; n<=time; n++) {
+	    sum = (sum*procents/100 + sum);
+        alert("Количество лет:" + n + " Cумма: " + sum);	
+	}
+	
+	
+</script>

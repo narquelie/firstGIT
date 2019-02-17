@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+
+    var round = 0;
+	do {
+	    if ((Math.random() * 8) < 1) {
+		    alert ("Не повезло!");
+			break;
+		}
+		round++;
+		}
+	while (prompt("y - играем, другое -  стоп!:") == "y");
+			
+	alert("Раундов сыграно: " + round);
+	
+</script>

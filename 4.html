@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+
+    var round = 0;
+	do {
+	    if ((Math.random() * 8) < 1) {
+		    alert ("Не повезло!");
+			break;
+		} else if (prompt("Для повторной игры введите y:") == "y") {
+		     round++;
+		} else {
+            break;
+        }			
+	} while (true);
+			
+	alert("Раундов сыграно: " + round);
+	
+</script>
